@@ -13,7 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: sudo
+      run: sudo chown -R ubuntu:ubuntu ubuntu
     - name: make
       run: make
     - name: make iso
-      run: sudo ./createimage.sh
+      run: ./createimage.sh
