@@ -22,3 +22,8 @@ jobs:
       with:
           name: myos.elf
           path: myos.elf
+    - name: Upload a Build Artifact(image.hdd)
+      uses: actions/upload-artifact@v2.1.4
+      with:
+          name: image.hdd
+          path: image.hdd
