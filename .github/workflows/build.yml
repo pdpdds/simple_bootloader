@@ -16,4 +16,4 @@ jobs:
     - name: make
       run: make
     - name: make iso
-      run: ./createimage.sh
+      run: sudo ./createimage.sh
