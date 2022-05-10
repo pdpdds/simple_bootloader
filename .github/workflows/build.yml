@@ -16,7 +16,7 @@ jobs:
     - name: make
       run: make
     - name: iso
-      run: ./createimage.sh
+      run: ./createimage.sh 
     - name: Upload a Build Artifact(myos.elf)
       uses: actions/upload-artifact@v2.1.4
       with:
