@@ -22,6 +22,7 @@ sudo mount ${USED_LOOPBACK}p1 img_mount
 sudo mkdir -p img_mount/EFI/BOOT
 sudo cp -v myos.elf limine.cfg limine/limine.sys img_mount/
 sudo cp -v limine/BOOTX64.EFI img_mount/EFI/BOOT/
+
 # Sync system cache and unmount partition and loopback device.
 sync
 sudo umount img_mount
